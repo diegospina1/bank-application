@@ -1,0 +1,18 @@
+<header class="container-header-elements">
+  <a routerLink="/home">
+    <div class="container-brand">
+      <h4>
+        Banco Avocado
+      </h4>
+      <img src="avocado.png" alt="logo banco Avocado">
+    </div>
+  </a>
+
+  <div *ngIf="isNotLoggedIn" class="account">
+    <p>Iniciar sesión</p>
+    <img src="iconoUsuario.png" alt="icono iniciar sesión">
+  </div>
+  <div *ngIf="isLoggedIn" class="account">
+    <img src="iconoUsuario.png" alt="icono iniciar sesión">
+  </div>
+</header>
