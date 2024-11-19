@@ -8,3 +8,7 @@ body{
   font-family: "Poppins", Helvetica, sans-serif;
   font-size: 16px;
 }
+
+:root{
+  --header-color: #0c969c;
+}

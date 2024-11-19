@@ -22,7 +22,7 @@ p {
   font-size: 24px;
   width: 5%;
   position: absolute;
-  background-color: #0c969c;
+  background-color: var(--header-color);
   align-content: center;
   text-align: center;
   z-index: 1;
