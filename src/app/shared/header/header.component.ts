@@ -10,4 +10,11 @@ export class HeaderComponent {
   isNotLoggedIn: boolean = true;
   isLoggedIn: boolean = false;
 
+  checkEmptyProp(condition: boolean){
+    if (condition){
+      this.isLoggedIn = false; 
+    }
+
+  }
+
 }
