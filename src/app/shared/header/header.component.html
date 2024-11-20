@@ -1,6 +1,6 @@
-<header class="flex flex-row justify-between py-3 px-8 items-center bg-aqua drop-shadow-md">
+<header class="flex flex-row justify-between h-16 px-8 items-center bg-aqua-0 drop-shadow-md">
   <a routerLink="/home">
-    <div class="flex gap-2.5 items-center">
+    <div class="flex gap-2.5 items-center h-full">
       <h4 class="font-semibold text-2xl">
         Banco Avocado
       </h4>
@@ -8,11 +8,13 @@
     </div>
   </a>
 
-  <div *ngIf="isNotLoggedIn" class="flex gap-3 items-center justify-evenly">
+  <div *ngIf="isNotLoggedIn"
+       class="text-dark h-full px-4 py-2 bg-blue-chill-600 content-center
+       hover:bg-blue-chill-800 hover:text-gray-light">
     <p class="font-medium text-base">Iniciar sesión</p>
-    <img src="iconoUsuario.png" alt="icono iniciar sesión" class="w-9 h-9">
   </div>
-  <div *ngIf="isLoggedIn" class="account">
-    <img src="iconoUsuario.png" alt="icono iniciar sesión" class="w-12 h-12">
+  <div *ngIf="isLoggedIn" class="h-full px-4 py-2 bg-blue-chill-600 content-center
+       hover:bg-blue-chill-800">
+    <img src="iconoUsuario.png" alt="icono iniciar sesión" class="w-8 h-8 hover:invert">
   </div>
 </header>

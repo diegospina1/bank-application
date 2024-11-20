@@ -7,12 +7,12 @@ import {Component} from '@angular/core';
 })
 export class HeaderComponent {
 
-  isNotLoggedIn: boolean = true;
-  isLoggedIn: boolean = false;
+  isNotLoggedIn: boolean = false;
+  isLoggedIn: boolean = true;
 
   checkEmptyProp(condition: boolean){
     if (condition){
-      this.isLoggedIn = false; 
+      this.isLoggedIn = false;
     }
 
   }
