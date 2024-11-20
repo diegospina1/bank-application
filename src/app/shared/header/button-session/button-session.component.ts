@@ -8,4 +8,6 @@ export class ButtonSessionComponent {
 
   @Input()
   isLoggedIn: boolean = false;
+
+  image: string = 'iconoUsuario.png';
 }

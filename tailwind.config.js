@@ -34,7 +34,7 @@ module.exports = {
         '900': '#111827',
         '950': '#030712',
       },
-
+      'success': '#04AA6D',
     },
     fontFamily: {
       sans: ['Poppins', 'sans-serif']
