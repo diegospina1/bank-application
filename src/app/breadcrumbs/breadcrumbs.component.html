@@ -1,4 +1,4 @@
-<nav *ngIf="(breadcrumbs$ | async) as breadcrumbs" class="min-w-full pl-8 pt-5 text-base text-gray-600 font-medium opacity-75">
+<nav *ngIf="(breadcrumbs$ | async) as breadcrumbs" class="min-w-full pl-8 pt-3 text-base text-gray-600 font-normal opacity-80">
   <ol>
     <li *ngFor="let breadcrumb of breadcrumbs; let last = last" class="inline-flex mr-0.5">
       <a *ngIf="!last" [routerLink]="breadcrumb.url" class="cursor-pointer hover:text-gray-700">
