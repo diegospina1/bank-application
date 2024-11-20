@@ -5,13 +5,6 @@ module.exports = {
   ],
   theme: {
     colors: {
-      'aqua': {
-        '0' : '#0c969c',
-        '5': '#0b787d',
-        '10': '#0a7075',
-        '20': '#032f30',
-        '30': '#031716',
-      },
       'blue-chill': {
         '50': '#f0fdfc',
         '100': '#cbfcf7',
@@ -25,8 +18,6 @@ module.exports = {
         '900': '#124b4f',
         '950': '#042a2f',
       },
-      'cyan': '#6ba3be',
-      'cyan-dark': '#274D60',
       'white': '#ffffff',
       'black': '#000000',
       'gray-light': '#E2E2E2',
@@ -49,7 +40,11 @@ module.exports = {
       sans: ['Poppins', 'sans-serif']
     },
 
-    extend: {},
+    extend: {
+      translate: {
+        'reverse-half': '-50%',
+      }
+    },
   },
   plugins: [require('@tailwindcss/forms')],
 }

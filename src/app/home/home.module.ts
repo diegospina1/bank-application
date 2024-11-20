@@ -1,11 +1,11 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {HomeComponent} from "./home.component";
-import { CarrouselComponent } from './carrousel/carrousel.component';
+import {SliderComponent} from './slider/slider.component';
 
 
 @NgModule({
-  declarations: [HomeComponent, CarrouselComponent],
+  declarations: [HomeComponent, SliderComponent],
   imports: [
     CommonModule
   ]

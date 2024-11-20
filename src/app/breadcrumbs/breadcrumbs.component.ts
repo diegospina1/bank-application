@@ -6,15 +6,13 @@ import {Observable} from "rxjs";
 @Component({
   selector: 'app-breadcrumbs',
   templateUrl: './breadcrumbs.component.html',
-  styleUrl: './breadcrumbs.component.css'
 })
-export class BreadcrumbsComponent implements OnInit {
+export class BreadcrumbsComponent {
 
   breadcrumbs$: Observable<Breadcrumb[]>;
+
   constructor(private breadcrumbService: BreadcrumbsService) {
     this.breadcrumbs$ = this.breadcrumbService.breadcrumbs$;
   }
 
-  ngOnInit(): void {
-  }
 }
