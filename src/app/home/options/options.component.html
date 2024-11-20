@@ -1,0 +1,11 @@
+<div class="flex w-full h-auto justify-center mb-5">
+  <div class="flex border-2 shadow max-w-2xl items-center justify-center gap-5 bg-white px-8 py-5">
+    <div *ngFor="let option of options; let i = index;"
+         class="flex w-32 flex-col items-center text-balance cursor-pointer">
+      <a routerLink="{{ option.route }}">
+        <img [src]="option.icon" [alt]="option.alt" class="mx-auto">
+        <p>{{ option.name }}</p>
+      </a>
+    </div>
+  </div>
+</div>
