@@ -14,6 +14,9 @@ import {OverlayModule} from '@angular/cdk/overlay';
 import {RegisterComponent} from './components/register/register.component';
 import {ReactiveFormsModule} from "@angular/forms";
 import { ButtonComponent } from './components/button/button.component';
+import { ProductsComponent } from './products/products.component';
+import { CreateComponent } from './products/create/create.component';
+import { SolicitudComponent } from './products/solicitud/solicitud.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +28,9 @@ import { ButtonComponent } from './components/button/button.component';
     LoginComponent,
     RegisterComponent,
     ButtonComponent,
+    ProductsComponent,
+    CreateComponent,
+    SolicitudComponent,
   ],
   imports: [
     BrowserModule,
