@@ -1,0 +1,81 @@
+<div class="flex justify-center items-center  pb-4 gap-4">
+  <div class=" p-6 rounded shadow-2xl  border-2 border-blue-chill-950">
+    <div class="">
+      <h4 class="text-center text-2xl font-medium"> Solicitud de producto</h4>
+    </div>
+    <br>
+    <form class="items-center space-y-3 ">
+      <div>
+        <label for="name">Nombre :</label>
+        <div>
+          <input id="name" type="text" placeholder="Ej: Juan" required
+                 class="shadow appearance-none border rounded py-1 px-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+        </div>
+      </div>
+      <div>
+        <label for="last-name">Apellido :</label>
+        <div>
+          <input id="last-name" type="text" placeholder="Ej: Prez " required
+                 class="shadow appearance-none border rounded py-1 px-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+        </div>
+      </div>
+      <div>
+        <label for="monto">Salario</label>
+        <div>
+          <input id="monto" type="text" placeholder="Minimo de $1.600.000"
+                 class="shadow appearance-none border rounded py-1 px-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+        </div>
+      </div>
+      <div>
+        <label for="trabajo">Lugar de trabajo</label>
+        <div>
+          <input id="trabajo" type="text" placeholder="Ej: Google, colmedica, ..."
+                 class="shadow appearance-none border rounded py-1 px-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+        </div>
+      </div>
+      <div>
+        <label for="documento">Documento</label>
+        <div>
+          <input id="documento" type="text" required placeholder="Ej: 1144785990"
+                 class="shadow appearance-none border rounded py-1 px-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+        </div>
+      </div>
+      <div>
+        <label for="ciudad">Ciudad de residencia</label>
+        <div>
+          <select id="ciudad"
+                  class=" shadow appearance-none border rounded py-1 px-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+            <option selected>Elija...</option>
+            <option>Bogota D.C</option>
+            <option>Medellin</option>
+            <option>Barranquilla</option>
+            <option>Bucaramanga</option>
+            <option>Cali</option>
+            <option>Pereira</option>
+            <option>San gil</option>
+          </select>
+        </div>
+      </div>
+      <div>
+        <label for="tipo-producto">Tipo de tarjeta</label>
+        <div>
+          <select id="tipo-producto"
+                  class=" shadow appearance-none border rounded py-1 px-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+            <option selected>Elija...</option>
+            <option>Tarjeta de credito visa</option>
+            <option value="">Tarjeta de credito blue sky</option>
+            <option value="">Tarjeta de credito soriana</option>
+          </select>
+        </div>
+      </div>
+      <button
+        class="w-auto px-3 py-2.5 bg-blue-chill-700 hover:bg-blue-chill-800 text-white text-sm rounded-md font-medium">
+        Solicitar
+      </button>
+    </form>
+  </div>
+  <div class="ml-4">
+    <img src="form-img/customers.png" alt="2 personas sonrriendo y viendo a un celular con el logo de avocado bank"
+         class="w-96 h-auto rounded-xl shadow-xl">
+  </div>
+</div>

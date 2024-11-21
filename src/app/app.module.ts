@@ -9,6 +9,9 @@ import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 import {BreadcrumbsService} from "./service/breadcrumbs.service";
 import { ButtonSessionComponent } from './shared/header/button-session/button-session.component';
 import {NgOptimizedImage} from "@angular/common";
+import { ProductsComponent } from './products/products.component';
+import { CreateComponent } from './products/create/create.component';
+import { SolicitudComponent } from './products/solicitud/solicitud.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +20,9 @@ import {NgOptimizedImage} from "@angular/common";
     HeaderComponent,
     BreadcrumbsComponent,
     ButtonSessionComponent,
+    ProductsComponent,
+    CreateComponent,
+    SolicitudComponent,
   ],
   imports: [
     BrowserModule,
