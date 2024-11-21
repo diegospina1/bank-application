@@ -5,10 +5,15 @@ import {AppComponent} from './app.component';
 import {FooterComponent} from "./shared/footer/footer.component";
 import {HeaderComponent} from "./shared/header/header.component";
 import {HomeModule} from "./home/home.module";
-import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
+import {BreadcrumbsComponent} from './breadcrumbs/breadcrumbs.component';
 import {BreadcrumbsService} from "./service/breadcrumbs.service";
-import { ButtonSessionComponent } from './shared/header/button-session/button-session.component';
+import {ButtonSessionComponent} from './shared/header/button-session/button-session.component';
 import {NgOptimizedImage} from "@angular/common";
+import {LoginComponent} from './components/login/login.component';
+import {OverlayModule} from '@angular/cdk/overlay';
+import {RegisterComponent} from './components/register/register.component';
+import {ReactiveFormsModule} from "@angular/forms";
+import { ButtonComponent } from './components/button/button.component';
 import { ProductsComponent } from './products/products.component';
 import { CreateComponent } from './products/create/create.component';
 import { SolicitudComponent } from './products/solicitud/solicitud.component';
@@ -20,6 +25,9 @@ import { SolicitudComponent } from './products/solicitud/solicitud.component';
     HeaderComponent,
     BreadcrumbsComponent,
     ButtonSessionComponent,
+    LoginComponent,
+    RegisterComponent,
+    ButtonComponent,
     ProductsComponent,
     CreateComponent,
     SolicitudComponent,
@@ -28,7 +36,9 @@ import { SolicitudComponent } from './products/solicitud/solicitud.component';
     BrowserModule,
     AppRoutingModule,
     HomeModule,
-    NgOptimizedImage
+    NgOptimizedImage,
+    OverlayModule,
+    ReactiveFormsModule,
   ],
   providers: [BreadcrumbsService],
   bootstrap: [AppComponent]
