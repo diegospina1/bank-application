@@ -7,5 +7,16 @@
       <img src="avocado.png" alt="logo banco Avocado" class="w-7 h-9 invert">
     </div>
   </a>
-  <app-button-session [isLoggedIn]="isLoggedIn" class="h-full"></app-button-session>
+  <app-button-session [isLoggedIn]="isLoggedIn" (click)="isOpenedLoginForm = !isOpenedLoginForm"
+                      cdkOverlayOrigin #loginOverlay="cdkOverlayOrigin"
+                      class="h-full"></app-button-session>
 </header>
+
+<ng-template
+  [cdkConnectedOverlay]
+  [cdkConnectedOverlayOrigin]="loginOverlay"
+  [cdkConnectedOverlayOpen]="isOpenedLoginForm">
+  <app-login></app-login>
+</ng-template>
+
+
