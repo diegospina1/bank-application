@@ -11,6 +11,7 @@ import { ButtonSessionComponent } from './shared/header/button-session/button-se
 import {NgOptimizedImage} from "@angular/common";
 import { ProductsComponent } from './products/products.component';
 import { CreateComponent } from './products/create/create.component';
+import { SolicitudComponent } from './products/solicitud/solicitud.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { CreateComponent } from './products/create/create.component';
     ButtonSessionComponent,
     ProductsComponent,
     CreateComponent,
+    SolicitudComponent,
   ],
   imports: [
     BrowserModule,
