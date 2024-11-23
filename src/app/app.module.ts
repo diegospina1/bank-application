@@ -12,6 +12,7 @@ import {NgOptimizedImage} from "@angular/common";
 import { ProductsComponent } from './products/products.component';
 import { CreateComponent } from './products/create/create.component';
 import { SolicitudComponent } from './products/solicitud/solicitud.component';
+import { ProductscardsComponent } from './products/productscards/productscards.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { SolicitudComponent } from './products/solicitud/solicitud.component';
     ProductsComponent,
     CreateComponent,
     SolicitudComponent,
+    ProductscardsComponent,
   ],
   imports: [
     BrowserModule,
