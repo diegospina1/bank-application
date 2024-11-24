@@ -45,7 +45,7 @@
         <div>
           <select id="ciudad"
                   class=" shadow appearance-none border rounded py-1 px-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
-            <option selected>Elija...</option>
+            <option selected disabled>Elija...</option>
             <option>Bogota D.C</option>
             <option>Medellin</option>
             <option>Barranquilla</option>
@@ -58,20 +58,17 @@
       </div>
       <div>
         <label for="tipo-producto">Tipo de tarjeta</label>
-        <div>
+        <div class="mb-3.5">
           <select id="tipo-producto"
                   class=" shadow appearance-none border rounded py-1 px-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
-            <option selected>Elija...</option>
+            <option selected disabled>Elija...</option>
             <option>Tarjeta de credito visa</option>
             <option value="">Tarjeta de credito blue sky</option>
             <option value="">Tarjeta de credito soriana</option>
           </select>
         </div>
       </div>
-      <button
-        class="w-auto px-3 py-2.5 bg-blue-chill-700 hover:bg-blue-chill-800 text-white text-sm rounded-md font-medium">
-        Solicitar
-      </button>
+      <app-button [typeBtn]="'submit'">Solicitar</app-button>
     </form>
   </div>
   <div class="ml-4">
