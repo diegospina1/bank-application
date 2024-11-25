@@ -18,6 +18,7 @@ import { CreateComponent } from './products/create/create.component';
 import { SolicitudComponent } from './products/solicitud/solicitud.component';
 import { SharedModule } from './components/shared/shared.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ProductscardsComponent } from './products/productscards/productscards.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     ProductsComponent,
     CreateComponent,
     SolicitudComponent,
+    ProductscardsComponent,
   ],
   imports: [
     BrowserModule,
