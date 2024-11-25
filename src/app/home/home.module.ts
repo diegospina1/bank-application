@@ -7,6 +7,7 @@ import { CardCrearCuentaComponent } from './card-crear-cuenta/card-crear-cuenta.
 import { HomeComponent } from './home.component';
 import { OptionsComponent } from './options/options.component';
 import { SliderComponent } from './slider/slider.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,6 @@ import { SliderComponent } from './slider/slider.component';
     CardCrearCuentaComponent,
     OptionsComponent,
   ],
-  imports: [CommonModule, RouterLink, ReactiveFormsModule, SharedModule],
+  imports: [CommonModule, RouterLink, ReactiveFormsModule, SharedModule, FontAwesomeModule],
 })
 export class HomeModule {}

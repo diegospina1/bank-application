@@ -6,16 +6,20 @@ import { Component, Input } from '@angular/core';
 })
 export class ButtonComponent {
   @Input() typeBtn: 'button' | 'reset' | 'submit' = 'button';
-  @Input() color: string = 'blue-chill';
+  @Input() color: string = 'emerald';
   @Input() width: string = 'auto';
+  @Input() text: string = '';
 
-  get colors() {
+  get dinamicClases() {
     return {
-      'bg-blue-chill-700': this.color == 'blue-chill',
-      'hover:bg-blue-chill-800': this.color == 'blue-chill',
-      'focus:ring-blue-chill-600': this.color == 'blue-chill',
+      'bg-emerald-600': this.color == 'emerald',
+      'hover:bg-emerald-700': this.color == 'emerald',
+      'focus:ring-emerald-600': this.color == 'emerald',
       'w-full': this.width == 'full',
       'w-auto': this.width == 'auto',
+      'text-xl': this.text == 'xl',
+      'text-lg': this.text == 'lg',
+      'text-sm': this.text == 'sm',
     };
   }
 }

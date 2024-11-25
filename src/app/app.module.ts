@@ -17,6 +17,7 @@ import { ProductsComponent } from './products/products.component';
 import { CreateComponent } from './products/create/create.component';
 import { SolicitudComponent } from './products/solicitud/solicitud.component';
 import { SharedModule } from './components/shared/shared.module';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { SharedModule } from './components/shared/shared.module';
     OverlayModule,
     ReactiveFormsModule,
     SharedModule,
+    FontAwesomeModule,
   ],
   providers: [BreadcrumbsService],
   bootstrap: [AppComponent],
