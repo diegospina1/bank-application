@@ -1,0 +1,74 @@
+<div class="flex justify-center items-center  pb-4 gap-4">
+  <div class=" p-6 rounded shadow-2xl  border-2 border-blue-chill-950">
+    <div class="">
+      <h4 class="text-center text-2xl font-medium"> Solicitud de Entrega</h4>
+    </div>
+    <br>
+    <form class="items-center space-y-3 ">
+      <div>
+        <label for="tipo-id">Tipo de identificacion</label>
+        <div class="mb-3.5">
+          <select id="tipo-id"
+                  class=" shadow appearance-none border rounded py-1 px-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+            <option selected disabled>Elija...</option>
+            <option>Cedula</option>
+            <option value="">Pasaporte</option>
+            <option value="">Cedula de extranjeria</option>
+          </select>
+        </div>
+      </div>
+      <div>
+        <label for="id">Identificacion :</label>
+        <div>
+          <input id="id" type="text" placeholder="Ej: 1144875996" required
+                 class="shadow appearance-none border rounded py-1 px-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+        </div>
+      </div>
+      <div>
+        <label for="name">Nombre :</label>
+        <div>
+          <input id="name" type="text" placeholder="Ej: Juan" required
+                 class="shadow appearance-none border rounded py-1 px-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+        </div>
+      </div>
+      <div>
+        <label for="last-name">Apellido :</label>
+        <div>
+          <input id="last-name" type="text" placeholder="Ej: Prez " required
+                 class="shadow appearance-none border rounded py-1 px-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+        </div>
+      </div>
+      <div>
+        <label for="producto">Producto a entregar</label>
+          <div class="mb-3.5">
+            <select id="producto"
+                    class=" shadow appearance-none border rounded py-1 px-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+              <option selected disabled>Elija...</option>
+              <option>Tarjeta de credito visa</option>
+              <option value="">Tarjeta de credito blue sky</option>
+              <option value="">Tarjeta de credito soriana</option>
+            </select>
+        </div>
+      </div>
+      <div>
+        <label for="direccion">Direccion :</label>
+        <div>
+          <input id="direccion" type="text" placeholder="Ej: Calle, Transversal, ..."
+                 class="shadow appearance-none border rounded py-1 px-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+        </div>
+      </div>
+      <div>
+        <label for="fecha">Fecha</label>
+        <div>
+          <input id="fecha" type="date" required placeholder="Ej: 10/02/2024"
+                 class="shadow appearance-none border rounded py-1 px-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+        </div>
+      </div><br>
+      <app-button [typeBtn]="'submit'">Solicitar</app-button>
+    </form>
+  </div>
+  <div class="ml-4">
+    <img src="form-img/imagenEnvioAvocadoBank.png" alt="1 caja de carton con el logo de avocado bank"
+         class="w-96 h-auto rounded-xl shadow-xl">
+  </div>
+</div>

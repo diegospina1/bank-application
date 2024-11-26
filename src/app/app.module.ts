@@ -20,6 +20,7 @@ import { SharedModule } from './components/shared/shared.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ProductscardsComponent } from './products/productscards/productscards.component';
 import { ListasolicitudComponent } from './products/listasolicitud/listasolicitud.component';
+import { SolicitudentregaComponent } from './products/solicitudentrega/solicitudentrega.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { ListasolicitudComponent } from './products/listasolicitud/listasolicitu
     SolicitudComponent,
     ProductscardsComponent,
     ListasolicitudComponent,
+    SolicitudentregaComponent,
   ],
   imports: [
     BrowserModule,
