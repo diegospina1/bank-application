@@ -1,0 +1,8 @@
+<div class="flex flex-col w-44">
+    <div *ngFor="let option of options;" 
+    class="text-lg py-3 border-b-2 border-emerald-600 mb-1 hover:scale-105 hover:bg-gray-200  transition-all duration-300 ease-out">
+        <a routerLink= {{option.route}} class="min-w-fit">
+            {{option.name}}
+        </a>
+    </div>
+</div>

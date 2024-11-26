@@ -4,6 +4,7 @@ import {HomeComponent} from "./home/home.component";
 import {RegisterComponent} from "./components/register/register.component";
 import {AppComponent} from "./app.component";
 import {ProductsComponent} from "./products/products.component";
+import { TableroControlComponent } from './tablero-control/tablero-control.component';
 
 const routes: Routes = [
   {path: '', pathMatch: 'full', redirectTo: 'home'},
@@ -11,6 +12,7 @@ const routes: Routes = [
   {path: 'register', component: RegisterComponent, data: {breadcrumb: 'Registro'} },
   {path:'crear-producto', component: ProductsComponent, data: {breadcrumb: 'Crear producto'} },
   {path:'app-productscards', component: ProductsComponent, data: {breadcrumb: 'Productos banco'} },
+  {path: 'panel-control', component: TableroControlComponent, data: {breadcrumb: 'Tablero de Control'}}
 ];
 
 @NgModule({

@@ -19,6 +19,9 @@ import { SolicitudComponent } from './products/solicitud/solicitud.component';
 import { SharedModule } from './components/shared/shared.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ProductscardsComponent } from './products/productscards/productscards.component';
+import { TableroControlComponent } from './tablero-control/tablero-control.component';
+import { MenuBarComponent } from './tablero-control/menu-bar/menu-bar.component';
+import { GraphicComponent } from './tablero-control/graphic/graphic.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +36,9 @@ import { ProductscardsComponent } from './products/productscards/productscards.c
     CreateComponent,
     SolicitudComponent,
     ProductscardsComponent,
+    TableroControlComponent,
+    MenuBarComponent,
+    GraphicComponent,
   ],
   imports: [
     BrowserModule,
