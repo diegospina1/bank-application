@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { faBars, faPenToSquare, faCreditCard } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-menu-bar',
@@ -6,9 +7,11 @@ import { Component } from '@angular/core';
 })
 export class MenuBarComponent {
   options = [
-    {name: 'Solicitudes', route: 'solicitudes'},
-    {name: 'Tarjetas', route: 'tarjetas'}
+    {name: 'Solicitudes', route: 'solicitudes', icon: faPenToSquare},
+    {name: 'Tarjetas', route: 'tarjetas', icon: faCreditCard}
   ]
+
+  faBars = faBars;
 
   
 }
