@@ -11,6 +11,7 @@ const routes: Routes = [
   {path: 'register', component: RegisterComponent, data: {breadcrumb: 'Registro'} },
   {path:'crear-producto', component: ProductsComponent, data: {breadcrumb: 'Crear producto'} },
   {path:'app-productscards', component: ProductsComponent, data: {breadcrumb: 'Productos banco'} },
+  {path:'app-listasolicitud', component: ProductsComponent, data: {breadcrumb: 'Lista de Solicitudes'} },
 ];
 
 @NgModule({
