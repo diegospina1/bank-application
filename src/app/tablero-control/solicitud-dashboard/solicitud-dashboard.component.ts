@@ -9,6 +9,9 @@ Chart.register(...registerables);
 })
 export class SolicitudDashboardComponent {
 
+  colorEnProceso = "#047857";
+  colorFinalizadas = "#6ee7b7";
+
   solicitudesEnProceso: number = 30;
   solicitudesFinalizadas: number = 15
   
@@ -21,14 +24,14 @@ export class SolicitudDashboardComponent {
       label: 'Solicitudes de productos',
       data: [this.solicitudesEnProceso, this.solicitudesFinalizadas],
       backgroundColor: [
-        'rgb(255, 99, 132)',
-        'rgb(54, 162, 235)'
+        this.colorEnProceso,
+        this.colorFinalizadas
       ],
       hoverOffset: 5
     }]
   };
 
-  public config: any = {
+  config: any = {
     type: 'pie',
     data: this.data,
   };
