@@ -5,6 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { ProductsComponent } from './products/products.component';
 
 const routes: Routes = [
+
   { path: '', pathMatch: 'full', redirectTo: 'home' },
   { path: 'home', component: HomeComponent, data: { breadcrumb: 'Home' } },
   {
@@ -30,6 +31,12 @@ const routes: Routes = [
       ),
     data: { breadcrumb: 'Panel de Control' },
   },
+  {
+    path:'app-listasolicitud', 
+    component: ProductsComponent, 
+    data: {breadcrumb: 'Lista de Solicitudes'} 
+  },
+
 ];
 
 @NgModule({

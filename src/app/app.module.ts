@@ -20,6 +20,8 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { ButtonSessionComponent } from './shared/header/button-session/button-session.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { TableroControlModule } from './tablero-control/tablero-control.module';
+import { ListasolicitudComponent } from './products/listasolicitud/listasolicitud.component';
+
 
 @NgModule({
   declarations: [
@@ -34,6 +36,7 @@ import { TableroControlModule } from './tablero-control/tablero-control.module';
     CreateComponent,
     SolicitudComponent,
     ProductscardsComponent,
+    ListasolicitudComponent,
   ],
   imports: [
     BrowserModule,
