@@ -1,0 +1,27 @@
+<div class="flex-col w-44 hidden my-2.5 md:flex">
+    <div *ngFor="let option of options;"
+        class="flex px-2 gap-2 text-lg font-medium py-3 border-b-2 border-emerald-600 mb-1 hover:scale-[1.02] hover:bg-gray-200 transition-all duration-150 ease-in">
+        <fa-icon [icon]="option.icon"></fa-icon>
+        <a [routerLink]="option.route">
+            {{option.name}}
+        </a>
+    </div>
+</div>
+<div class="w-full md:hidden my-2.5">
+    <cdk-accordion>
+        <cdk-accordion-item #burgerMenu="cdkAccordionItem">
+            <div class="w-full px-2" (click)="burgerMenu.toggle()">
+                <fa-icon [icon]="faBars" size="xl"></fa-icon>
+            </div>
+            <div class="flex flex-col w-full px-2 content-start" [style.display]="burgerMenu.expanded ? '' : 'none' ">
+                <div *ngFor="let option of options;"
+                    class="flex px-2 gap-2 text-base font-medium py-3 border-b-2 border-emerald-600 hover:scale-[1.01] hover:bg-gray-200 transition-all duration-150 ease-in">
+                    <fa-icon [icon]="option.icon"></fa-icon>
+                    <a [routerLink]="option.route">
+                        {{option.name}}
+                    </a>
+                </div>
+            </div>
+        </cdk-accordion-item>
+    </cdk-accordion>
+</div>
