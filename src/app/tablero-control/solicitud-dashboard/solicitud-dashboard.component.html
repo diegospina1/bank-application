@@ -1,7 +1,7 @@
-<div class="max-w-full flex flex-col items-center sm:items-start sm:flex-row sm:justify-start gap-4 px-8 pb-3.5 sm:py-5 border-b-2 ">
+<div class="max-w-full flex flex-wrap flex-col items-center sm:items-start sm:flex-row sm:justify-start gap-4 px-8 pb-3.5 sm:py-5 border-b-2">
     <div class="flex flex-col text-balance">
         <h4 class="text-2xl font-medium border-b-2 border-emerald-800 mb-4">
-            Total de solicitudes {{ solicitudesEnProceso + solicitudesFinalizadas }}
+            Total de solicitudes: {{ solicitudesEnProceso + solicitudesFinalizadas }}
         </h4>
         <p class="sm:text-lg">Solicitudes en proceso: {{ solicitudesEnProceso }}</p>
         <p class="sm:text-lg">Solicitudes finalizadas: {{ solicitudesFinalizadas }}</p>
@@ -11,4 +11,14 @@
             {{ config }}
         </canvas>
     </div>
+
+    <div class="flex-1 flex flex-col md:px-8 max-w-full">
+        <div class="max-w-max" >
+            <h4 class="text-2xl font-medium border-b-2 border-emerald-800 mb-4">
+                Lista de solicitudes
+            </h4>
+        </div>
+        <app-listasolicitud></app-listasolicitud>
+    </div>
+
 </div>

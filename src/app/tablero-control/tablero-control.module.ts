@@ -8,6 +8,8 @@ import { SolicitudDashboardComponent } from './solicitud-dashboard/solicitud-das
 import { TableroControlRoutingModule } from './tablero-control-routing.module';
 import { TableroControlComponent } from './tablero-control.component';
 import { TarjetaDashboardComponent } from './tarjeta-dashboard/tarjeta-dashboard.component';
+import { ListasolicitudComponent } from '../products/listasolicitud/listasolicitud.component';
+import { TarjetaTableComponent } from './tarjeta-dashboard/tarjeta-table/tarjeta-table.component';
 
 
 @NgModule({
@@ -15,13 +17,15 @@ import { TarjetaDashboardComponent } from './tarjeta-dashboard/tarjeta-dashboard
     TableroControlComponent,
     MenuBarComponent,
     SolicitudDashboardComponent,
-    TarjetaDashboardComponent
+    TarjetaDashboardComponent,
+    ListasolicitudComponent,
+    TarjetaTableComponent
   ],
   imports: [
     CommonModule,
     TableroControlRoutingModule,
     CdkAccordionModule,
-    FontAwesomeModule
+    FontAwesomeModule,
   ]
 })
 export class TableroControlModule { }
