@@ -34,7 +34,7 @@ import { TableroControlModule } from './tablero-control/tablero-control.module';
     ProductsComponent,
     CreateComponent,
     SolicitudComponent,
-    ProductscardsComponent,
+    ProductscardsComponent
   ],
   imports: [
     BrowserModule,
