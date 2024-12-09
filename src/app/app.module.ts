@@ -20,7 +20,8 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { ButtonSessionComponent } from './shared/header/button-session/button-session.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { TableroControlModule } from './tablero-control/tablero-control.module';
-
+import { DialogModule } from '@angular/cdk/dialog';
+import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { TableroControlModule } from './tablero-control/tablero-control.module';
     ProductsComponent,
     CreateComponent,
     SolicitudComponent,
-    ProductscardsComponent
+    ProductscardsComponent,
+    ForgotPasswordComponent,
   ],
   imports: [
     BrowserModule,
@@ -46,6 +48,7 @@ import { TableroControlModule } from './tablero-control/tablero-control.module';
     ReactiveFormsModule,
     SharedModule,
     FontAwesomeModule,
+    DialogModule
   ],
   providers: [BreadcrumbsService],
   bootstrap: [AppComponent],
