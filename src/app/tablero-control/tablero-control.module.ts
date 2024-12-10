@@ -3,11 +3,11 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { GraphicComponent } from './graphic/graphic.component';
+import { TableComponent } from '../components/table/table.component';
 import { MenuBarComponent } from './menu-bar/menu-bar.component';
+import { SolicitudDashboardComponent } from './solicitud-dashboard/solicitud-dashboard.component';
 import { TableroControlRoutingModule } from './tablero-control-routing.module';
 import { TableroControlComponent } from './tablero-control.component';
-import { SolicitudDashboardComponent } from './solicitud-dashboard/solicitud-dashboard.component';
 import { TarjetaDashboardComponent } from './tarjeta-dashboard/tarjeta-dashboard.component';
 
 
@@ -15,15 +15,15 @@ import { TarjetaDashboardComponent } from './tarjeta-dashboard/tarjeta-dashboard
   declarations: [
     TableroControlComponent,
     MenuBarComponent,
-    GraphicComponent,
     SolicitudDashboardComponent,
-    TarjetaDashboardComponent
+    TarjetaDashboardComponent,
+    TableComponent
   ],
   imports: [
     CommonModule,
     TableroControlRoutingModule,
     CdkAccordionModule,
-    FontAwesomeModule
+    FontAwesomeModule,
   ]
 })
 export class TableroControlModule { }

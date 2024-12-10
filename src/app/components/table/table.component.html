@@ -1,0 +1,54 @@
+<div class="relative overflow-x-auto mb-4 border min-h-[19rem]">
+    <table class="w-full text-sm text-left rtl:text-right text-gray-500">
+        <thead class="text-xs text-gray-700 uppercase bg-emerald-500">
+            <tr>
+                <th scope="col" class="px-6 py-3">
+                    ID
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Nombre
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Apellido
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Producto
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Estado
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let dato of obtenerDatosPaginados()" class="bg-white border-b ">
+                <th scope="row" class="px-6 md:py-4 font-medium text-gray-900 whitespace-nowrap">
+                    {{ dato.id }}
+                </th>
+                <td class="px-6 md:py-4">
+                    {{dato.nombre}}
+                </td>
+                <td class="px-6 md:py-4">
+                    {{ dato.apellido }}
+                </td>
+                <td class="px-6 md:py-4">
+                    {{ dato.producto }}
+                </td>
+                <td class="px-6 md:py-4">
+                    {{ dato.estado }}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="flex justify-center gap-2 items-center">
+    <button (click)="cambiarPagina(paginaActual - 1)" [disabled]="paginaActual === 1" [ngClass]="buttonStyle">
+        Anterior
+    </button>
+    <span class="font-medium">
+        Página {{ paginaActual }}
+    </span>
+    <button (click)="cambiarPagina(paginaActual + 1)" [disabled]="obtenerDatosPaginados().length < filasPorPagina"
+        [ngClass]="buttonStyle">
+        Siguiente
+    </button>
+</div>

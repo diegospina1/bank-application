@@ -8,7 +8,7 @@ import {FormBuilder, FormControl, FormGroup, Validators} from "@angular/forms";
 })
 export class CardCrearCuentaComponent {
 
-  image: string = "growth-capital.avif";
+  image: string = "growth-capital.webp";
 
   form: FormGroup = new FormGroup({
     email: new FormControl('', [Validators.required, Validators.email])

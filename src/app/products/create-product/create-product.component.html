@@ -1,0 +1,42 @@
+<div class="max-w-xs bg-white sm:min-w-[400px] mx-auto text-sm sm:text-base border-2 px-4 py-5 border-emerald-900 rounded-md shadow-md ">
+  <form class="flex flex-col gap-3 sm:gap-4">
+    <h4 class="text-center text-lg sm:text-xl leading-loose font-semibold border-b-2 border-gray-700">Crear Producto</h4>
+    <div>
+      <label for="name" class="block mb-1 sm:mb-1.5 font-medium">Nombre del producto</label>
+      <input id="name" type="text" placeholder="Ej: Aqua Credit"
+        class="rounded text-sm min-w-full text-gray-700 leading-tight">
+    </div>
+    <div>
+      <label for="monto" class="block mb-1 sm:mb-1.5 font-medium">Monto</label>
+      <input id="monto" type="text" placeholder="Minimo de $200.000"
+        class="rounded text-sm min-w-full text-gray-700 leading-tight">
+    </div>
+    <div>
+      <label for="precio" class="block mb-1 sm:mb-1.5 font-medium">Precio</label>
+      <input id="precio" type="text" placeholder="Minimo $25.000"
+        class="rounded text-sm min-w-full text-gray-700 leading-tight">
+    </div>
+    <div>
+      <label for="beneficios" class="block mb-1 sm:mb-1.5 font-medium">Beneficios</label>
+      <input id="beneficios" type="text" placeholder="Beneficios adicionales"
+        class="rounded text-sm min-w-full text-gray-700 leading-tight">
+    </div>
+    <div>
+      <label for="ciudad-beneficiada" class="block mb-1 sm:mb-1.5 font-medium">Ciudad beneficiada</label>
+      <input id="ciudad-beneficiada" type="text" placeholder="Ej: Bogota D.C"
+        class="rounded text-sm min-w-full text-gray-700 leading-tight">
+    </div>
+    <div>
+      <label for="tipo-producto" class="block mb-1 sm:mb-1.5 font-medium">Tipo de producto</label>
+      <select id="tipo-producto"
+        class="rounded min-w-full text-sm">
+        <option value="seleccionar" class="text-gray-700" selected disabled>Elija...</option>
+        <option value="credito">Tarjeta de credito</option>
+        <option value="debito">Tarjeta de debito</option>
+        <option value="prestamo">Prestamos</option>
+      </select>
+    </div>
+    <app-button [typeBtn]="'submit'" [width]="'full'">Crear</app-button>
+  </form>
+
+</div>
