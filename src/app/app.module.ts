@@ -11,9 +11,9 @@ import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { SharedModule } from './components/shared/shared.module';
 import { HomeModule } from './home/home.module';
-import { CreateComponent } from './products/create/create.component';
+import { CreateProductComponent } from './products/create-product/create-product.component';
 import { ProductsComponent } from './products/products.component';
-import { ProductscardsComponent } from './products/productscards/productscards.component';
+import { ProductsCardsComponent } from './products/products-cards/products-cards.component';
 import { SolicitudComponent } from './products/solicitud/solicitud.component';
 import { BreadcrumbsService } from './service/breadcrumbs.service';
 import { FooterComponent } from './shared/footer/footer.component';
@@ -22,6 +22,7 @@ import { HeaderComponent } from './shared/header/header.component';
 import { TableroControlModule } from './tablero-control/tablero-control.module';
 import { DialogModule } from '@angular/cdk/dialog';
 import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
+import { SolicitudEntregaComponent } from './components/solicitud-entrega/solicitud-entrega.component';
 
 @NgModule({
   declarations: [
@@ -33,10 +34,11 @@ import { ForgotPasswordComponent } from './components/forgot-password/forgot-pas
     LoginComponent,
     RegisterComponent,
     ProductsComponent,
-    CreateComponent,
+    CreateProductComponent,
     SolicitudComponent,
-    ProductscardsComponent,
+    ProductsCardsComponent,
     ForgotPasswordComponent,
+    SolicitudEntregaComponent
   ],
   imports: [
     BrowserModule,

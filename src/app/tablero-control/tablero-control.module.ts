@@ -4,7 +4,6 @@ import { NgModule } from '@angular/core';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { TableComponent } from '../components/table/table.component';
-import { ListasolicitudComponent } from '../products/listasolicitud/listasolicitud.component';
 import { MenuBarComponent } from './menu-bar/menu-bar.component';
 import { SolicitudDashboardComponent } from './solicitud-dashboard/solicitud-dashboard.component';
 import { TableroControlRoutingModule } from './tablero-control-routing.module';
@@ -18,7 +17,6 @@ import { TarjetaDashboardComponent } from './tarjeta-dashboard/tarjeta-dashboard
     MenuBarComponent,
     SolicitudDashboardComponent,
     TarjetaDashboardComponent,
-    ListasolicitudComponent,
     TableComponent
   ],
   imports: [

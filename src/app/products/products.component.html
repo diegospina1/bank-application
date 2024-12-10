@@ -1,6 +1,7 @@
-<div class="w-full">
-  <app-create *ngIf="isEmpleado"></app-create>
- <app-solicitud *ngIf="!isEmpleado"></app-solicitud>
-  <app-productscards></app-productscards>
+<div class="w-full relative">
+  <app-products-cards></app-products-cards>
+  <button *ngIf="isEmpleado" (click)="openCreateProductDialog()"
+    class="fixed bottom-10 left-10 shadow-2xl shadow-gray-800 rounded-full bg-emerald-600 w-16 h-16 z-40 hover:bg-emerald-">
+    <fa-icon [icon]="faPlus" size="2x" class="text-white animate-pulse hover:animate-none"></fa-icon>
+  </button>
 </div>
-

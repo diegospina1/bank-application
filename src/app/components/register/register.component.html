@@ -1,28 +1,28 @@
 <div class="w-full">
-  <p class="text-4xl font-semibold text-center mb-5">Formulario de registro</p>
-  <div class="flex justify-center gap-20 px-5 py-2.5">
-    <form [formGroup]="form" (ngSubmit)="onSubmit()" class=" bg-white px-6 py-4 rounded-md shadow-xl border-2 border-blue-chill-950">
+  <p class="text-xl sm:text-2xl md:text-4xl font-semibold text-center mb-3 md:mb-5">Formulario de registro</p>
+  <div class="mx-auto max-w-xs md:max-w-full flex justify-center gap-10 md:px-5 md:py-2.5">
+    <form [formGroup]="form" (ngSubmit)="onSubmit()" class="text-sm md:text-base bg-white px-4 md:px-6 py-3 md:py-4 rounded-md shadow-xl border-2 border-emerald-600">
       <div class="mb-5">
-        <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Email</label>
+        <label for="email" class="block mb-2 font-medium text-gray-900">Email</label>
         <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="name@mail.com" required [value]="registerEmail"/>
       </div>
       <div class="mb-5">
-        <label for="confirmarEmail" class="block mb-2 text-sm font-medium text-gray-900">Confirmar email</label>
+        <label for="confirmarEmail" class="block mb-2 font-medium text-gray-900">Confirmar email</label>
         <input type="email" formControlName="confirmarEmail" id="confirmarEmail" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="name@mail.com" required/>
       </div>
 
       <p class="text-black font-medium text-base my-3 opacity-60">Ingrese el nombre como aparece en el documento.</p>
 
       <div class="mb-5">
-        <label for="nombres" class="block mb-2 text-sm font-medium text-gray-900">Nombres</label>
+        <label for="nombres" class="block mb-2 font-medium text-gray-900">Nombres</label>
         <input type="text" formControlName="nombres" id="nombres" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Juan Carlos" required/>
       </div>
       <div class="mb-5">
-        <label for="apellidos" class="block mb-2 text-sm font-medium text-gray-900">Apellidos</label>
+        <label for="apellidos" class="block mb-2 font-medium text-gray-900">Apellidos</label>
         <input type="text" formControlName="apellidos" id="apellidos" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Ospina Garcia" required/>
       </div>
       <div class="mb-5">
-        <label for="tipo-documento" class="block mb-2 text-sm font-medium text-gray-900">Tipo de documento</label>
+        <label for="tipo-documento" class="block mb-2 font-medium text-gray-900">Tipo de documento</label>
         <select id="tipo-documento" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
           <option disabled selected>Seleccione su tipo de documento</option>
           <option *ngFor="let tipoDocumento of tiposDocumento">
@@ -31,34 +31,31 @@
         </select>
       </div>
       <div class="mb-5">
-        <label for="documento" class="block mb-2 text-sm font-medium text-gray-900">Numero de documento</label>
+        <label for="documento" class="block mb-2 font-medium text-gray-900">Numero de documento</label>
         <input type="tex" formControlName="numeroDocumento" id="documento" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Ejemplo: 1013456987" required/>
       </div>
       <div class="mb-5">
-        <label for="celular" class="block mb-2 text-sm font-medium text-gray-900">Numero de celular</label>
+        <label for="celular" class="block mb-2 font-medium text-gray-900">Numero de celular</label>
         <input type="text" formControlName="numeroCelular" id="celular" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Ejemplo: 3153920186" required/>
       </div>
 
       <p class="text-black font-medium text-base my-3 opacity-60">Subir cédula escaneada por ambos lados.</p>
 
       <div class="mb-5">
-        <label for="archivo-cedula" class="block mb-2 text-sm font-medium text-gray-900">Seleccionar</label>
+        <label for="archivo-cedula" class="block mb-2 font-medium text-gray-900">Seleccionar</label>
         <input type="file"  id="archivo-cedula" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"/>
       </div>
 
       <div class="mb-5">
-        <label for="password" class="block mb-2 text-sm font-medium text-gray-900">Digite una contraseña</label>
+        <label for="password" class="block mb-2 font-medium text-gray-900">Digite una contraseña</label>
         <input type="password" formControlName="password" id="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Ejemplo: 12345" required/>
       </div>
 
-      <app-button [typeBtn]="'submit'">Registrarme</app-button>
+      <app-button [typeBtn]="'submit'" [width]="'full'">Registrarme</app-button>
     </form>
 
-    <div class="flex flex-col items-center relative max-w-md ">
-      <img src="nature.jpg" alt="Nature image" class="rounded-md shadow-xl">
-      <div class="absolute bottom-[15%]">
-        <p class="text-4xl font-semibold text-center mb-5 underline underline-offset-4">Solo un paso más</p>
-      </div>
+    <div class="md:flex aspect-video w-96 items-center hidden">
+      <img src="nature.webp" alt="Imagen de una planta" class="rounded-md shadow-xl object-cover">
     </div>
   </div>
 </div>

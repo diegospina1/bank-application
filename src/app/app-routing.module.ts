@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { RegisterComponent } from './components/register/register.component';
 import { HomeComponent } from './home/home.component';
 import { ProductsComponent } from './products/products.component';
+import { SolicitudEntregaComponent } from './components/solicitud-entrega/solicitud-entrega.component';
 
 const routes: Routes = [
 
@@ -14,16 +15,6 @@ const routes: Routes = [
     data: { breadcrumb: 'Registro' },
   },
   {
-    path: 'crear-producto',
-    component: ProductsComponent,
-    data: { breadcrumb: 'Crear producto' },
-  },
-  {
-    path: 'app-productscards',
-    component: ProductsComponent,
-    data: { breadcrumb: 'Productos banco' },
-  },
-  {
     path: 'panel-control',
     loadChildren: () =>
       import('./tablero-control/tablero-control.module').then(
@@ -32,9 +23,14 @@ const routes: Routes = [
     data: { breadcrumb: 'Panel de Control' },
   },
   {
-    path:'app-listasolicitud', 
+    path:'productos', 
     component: ProductsComponent, 
-    data: {breadcrumb: 'Lista de Solicitudes'} 
+    data: {breadcrumb: 'Productos' } 
+  },
+  {
+    path:'solicitud', 
+    component: SolicitudEntregaComponent, 
+    data: {breadcrumb: 'Solicitud' } 
   },
 
 ];

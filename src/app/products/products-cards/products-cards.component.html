@@ -1,0 +1,15 @@
+<div class="flex justify-evenly xl:justify-start flex-wrap gap-6 sm:mx-5 sm:px-9">
+  <div class="flex relative max-w-xs flex-col px-5 py-3 gap-3 border-2 shadow-md hover:scale-[1.02] border-emerald-800"
+    *ngFor="let product of products">
+    <h4 class="text-lg font-medium leading-loose border-b-2 border-gray-700">{{ product.name }}</h4>
+    <div class="w-full rounded-lg">
+      <img [src]="product.imgSrc" [alt]="product.alt" class="aspect-video w-full object-cover rounded-lg">
+    </div>
+    <div class="text-gray-600 flex-grow text-sm h-[100px] overflow-clip">
+      <p class="text-ellipsis text-balance text-start">{{ product.description }}</p>
+    </div>
+    <div class="flex justify-start">
+      <app-button (click)="openSolicitudDialog()">Solicitar</app-button>
+    </div>
+  </div>
+</div>

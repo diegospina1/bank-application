@@ -9,11 +9,11 @@ export class SliderComponent {
 
   altImageSlider: string = 'Imagen slider';
   slides = [
-    {image: 'slider/largecap-stocks.png', text: this.altImageSlider},
-    {image: 'slider/beneficios.jpg', text: this.altImageSlider},
-    {image: 'slider/beneficios-empresariales.jpg', text: this.altImageSlider},
-    {image: 'slider/money.jpg', text: this.altImageSlider},
-    {image: 'slider/tarjeta-credito.png', text: this.altImageSlider},
+    {image: 'slider/largecap-stocks.webp', text: this.altImageSlider},
+    {image: 'slider/beneficios.webp', text: this.altImageSlider},
+    {image: 'slider/beneficios-empresariales.webp', text: this.altImageSlider},
+    {image: 'slider/money.webp', text: this.altImageSlider},
+    {image: 'slider/tarjeta-credito.webp', text: this.altImageSlider},
   ];
 
   @ViewChildren('image') images!: QueryList<ElementRef>;

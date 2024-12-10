@@ -9,6 +9,9 @@ export class ForgotPasswordComponent {
   fieldType: 'text' | 'password' = 'password';
 
   showPassword(){
-    this.fieldType = this.fieldType == 'password' ? 'text' : 'password';
+    this.fieldType = this.fieldType == 'password' ? 'text' : 'password';   
   }
+
+
+
 }
